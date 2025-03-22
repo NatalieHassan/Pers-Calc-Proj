@@ -1,8 +1,12 @@
+
+
+
 const inputValue = document.getElementById("user-input");
+//add event listener//
 const number = document.querySelectorAll(".numbers").forEach(function (item) {
   item.addEventListener("click", function (e) {
     if (inputValue.innerText === "NaN") {
-      inputValue.innerText = "";
+      inputValue.innerText = "0";
     }
     if (inputValue.innerText === "0") {
       inputValue.innerText = "";
